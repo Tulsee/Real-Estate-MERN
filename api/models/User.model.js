@@ -16,6 +16,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       require: true,
     },
+    avatar: {
+      type: String,
+      default:
+        "https://pxbar.com/wp-content/uploads/2023/09/girl-pic-for-instagram-profile-1.jpg",
+    },
   },
   { timestamps: true }
 );
