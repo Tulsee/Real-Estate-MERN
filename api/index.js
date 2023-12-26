@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import UserRouter from "./routes/user.route.js";
 import AuthRouter from "./routes/auth.route.js";
@@ -17,6 +18,7 @@ mongoose
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use("/api/user", UserRouter);
 app.use("/api/auth", AuthRouter);
