@@ -16,7 +16,7 @@ const ListingCard = ({ listing }) => {
     bathrooms,
   } = listing;
   return (
-    <div className="bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[330px]">
+    <div className="bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[300px]">
       <Link to={`/listing/${_id}`}>
         <img
           src={
